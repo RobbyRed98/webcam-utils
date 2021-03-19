@@ -1,0 +1,12 @@
+Source: webcam-utils
+Section: video
+Priority: optional
+Maintainer: RobbyRed98 <r.roth@mail.de>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+
+Package: webcam-utils
+Architecture: all
+Depends: ${misc:Depends}
+Description: A small collection of scripts to enable, disable or check the status of the webcam.

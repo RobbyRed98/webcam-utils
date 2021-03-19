@@ -1,0 +1,22 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Build DEP-Package
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install make devscripts dh-make
+      - name: Build DEB-Package
+        run: |
+          make package
+      - name: Upload DEB-Package
+        uses: actions/upload-artifact@master
+        with:
+          name: package
+          path: webcam-utils_*_all.deb

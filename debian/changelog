@@ -1,0 +1,5 @@
+webcam-utils (0.0.1-1) unstable; urgency=medium
+
+  * Initial release - Added webcam-{enable|disable|status} scripts.
+
+ -- RobbyRed98 <r.roth@mail.de>  Fri, 19 Mar 2021 22:10:50 +0100

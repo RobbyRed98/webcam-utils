@@ -1,0 +1,23 @@
+#!/bin/bash
+
+set -e
+
+echo "Removing links..."
+
+if [ -f /usr/bin/webcam-enable ]; then 
+    rm /usr/bin/webcam-enable
+fi
+
+if [ -f /usr/bin/webcam-disable ]; then 
+    rm /usr/bin/webcam-disable
+fi
+
+if [ -f /usr/bin/webcam-status ]; then 
+    rm /usr/bin/webcam-status
+fi
+
+echo "Successfully removed links."
+
+#DEBHELPER#
+
+exit 0

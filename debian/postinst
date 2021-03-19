@@ -1,0 +1,35 @@
+#!/bin/bash
+
+set -e
+
+echo "Creating links..."
+
+## webcam-enable setup
+
+if [ -f /usr/bin/webcam-enable ]; then 
+    rm /usr/bin/webcam-enable
+fi
+
+ln -s /usr/share/webcam-utils/webcam-enable.sh /usr/bin/webcam-enable -v
+
+## webcam-disable setup
+
+if [ -f /usr/bin/webcam-disable ]; then 
+    rm /usr/bin/webcam-disable
+fi
+
+ln -s /usr/share/webcam-utils/webcam-disable.sh /usr/bin/webcam-disable -v
+
+## webcam-disable status
+
+if [ -f /usr/bin/webcam-status ]; then 
+    rm /usr/bin/webcam-status
+fi
+
+ln -s /usr/share/webcam-utils/webcam-status.sh /usr/bin/webcam-status -v
+
+echo "Successfully created links."
+
+#DEBHELPER#
+
+exit 0
