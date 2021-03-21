@@ -1,12 +1,16 @@
 Source: webcam-utils
-Section: video
+Section: universe
 Priority: optional
 Maintainer: RobbyRed98 <r.roth@mail.de>
 Build-Depends: debhelper-compat (= 12)
 Standards-Version: 4.5.0
-Rules-Requires-Root: no
+Vcs-Browser: https://github.com/RobbyRed98/webcam-utils.git
 
 Package: webcam-utils
 Architecture: all
-Depends: ${misc:Depends}
-Description: A small collection of scripts to enable, disable or check the status of the webcam.
+Depends: ${misc:Depends}, bash (>=4.4.18), sed (>=4.4), grep (>=3.1), kmod(>=24)
+Description: Provides scripts to enable and disable a webcam.
+ Webcam-Utils is a small collection of scripts to enable, 
+ disable or check the status of a webcam. Moreover the 
+ package provides scripts to check, enable, disable or 
+ set the default state of the webcam. 

@@ -1,4 +1,10 @@
-webcam-utils (0.0.1-1) unstable; urgency=medium
+webcam-utils (0.1.0) unstable; urgency=low
+
+  * Added webcam-set-default script and improved setup scripts.
+
+ -- RobbyRed98 <r.roth@mail.de>  Sun, 21 Mar 2021 18:03:30 +0100
+
+webcam-utils (0.0.1) unstable; urgency=low
 
   * Initial release - Added webcam-{enable|disable|status} scripts.
 

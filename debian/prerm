@@ -2,19 +2,15 @@
 
 set -e
 
+scripts_to_link=(webcam-enable webcam-disable webcam-status webcam-set-default)
+
 echo "Removing links..."
 
-if [ -f /usr/bin/webcam-enable ]; then 
-    rm /usr/bin/webcam-enable
-fi
-
-if [ -f /usr/bin/webcam-disable ]; then 
-    rm /usr/bin/webcam-disable
-fi
-
-if [ -f /usr/bin/webcam-status ]; then 
-    rm /usr/bin/webcam-status
-fi
+for script in ${scripts_to_link[@]}; do
+    if [ -f /usr/bin/$script ]; then 
+        rm /usr/bin/$script -v
+    fi
+done
 
 echo "Successfully removed links."
 

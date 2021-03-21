@@ -1,10 +1,17 @@
 #!/bin/bash
-lsmod | grep uvcvideo > /dev/null 2>&1
 
+lsmod | grep uvcvideo > /dev/null 2>&1
 if [ $? -eq 0 ]; then
     echo "Webcam: enabled"
-    exit 0
+else 
+    echo "Webcam: disabled"
 fi
 
-echo "Webcam: disabled"
+grep "uvcvideo" /etc/modprobe.d/blacklist.conf > /dev/null 2>&1
+if [ ! $? -eq 0 ]; then
+    echo "Webcam default: enabled"
+else 
+    echo "Default: disabled"
+fi
+
 exit 0
