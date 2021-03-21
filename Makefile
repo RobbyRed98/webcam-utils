@@ -20,3 +20,4 @@ install:
 	ln -s /usr/share/webcam-utils/webcam-enable.sh /usr/bin/webcam-enable -v
 	ln -s /usr/share/webcam-utils/webcam-disable.sh /usr/bin/webcam-disable -v
 	ln -s /usr/share/webcam-utils/webcam-status.sh /usr/bin/webcam-status -v
+	ln -s /usr/share/webcam-utils/webcam-set-default.sh /usr/bin/webcam-set-default -v
