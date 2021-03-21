@@ -5,7 +5,7 @@ default: clean package
 clean:
 	rm webcam-utils-`cat version` -rf
 	rm webcam-utils_`cat version`* -rf
-	rm doc/*.1.gz -rf
+	rm doc/*.1.gz -rf	
 
 manpage:
 	pandoc doc/webcam-utils.1.md -s -t man | gzip > doc/webcam-utils.1.gz
@@ -18,6 +18,7 @@ package: manpage
 	mkdir webcam-utils-`cat version`
 	cd webcam-utils-*
 	cp ./doc/*.1.gz webcam-utils-`cat version`/ 
+	cp bash-completion/webcam-set-default webcam-utils-`cat version`/ 
 	cp ./debian webcam-utils-`cat version`/ -r
 	cp ./webcam-*.sh webcam-utils-`cat version`/
 	tar -C webcam-utils-`cat version`/ -cvaf webcam-utils_`cat version`.orig.tar.xz ./

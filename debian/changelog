@@ -1,3 +1,9 @@
+webcam-utils (0.2.1) stable; urgency=low
+
+  * Added bash-completion for the webcam-set-default.
+
+ -- RobbyRed98 <r.roth@mail.de>  Sun, 21 Mar 2021 23:36:30 +0100
+
 webcam-utils (0.2.0) stable; urgency=low
 
   * Added manpages for the scripts and the scripts collection.

@@ -1,2 +1,3 @@
+webcam-set-default usr/share/bash-completion/completions
 webcam-*.sh usr/share/webcam-utils
 *.1.gz usr/share/man/man1

@@ -1,4 +1,4 @@
-% webcam-utils(1) 0.2.0
+% webcam-utils(1) 0.2.1
 % RobbyRed98
 % March 2021
 
