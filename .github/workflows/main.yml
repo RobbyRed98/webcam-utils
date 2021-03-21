@@ -11,7 +11,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt install make devscripts dh-make
+          sudo apt install make devscripts dh-make pandoc
       - name: Build DEB-Package
         run: |
           make package

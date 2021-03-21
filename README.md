@@ -13,10 +13,10 @@ A small collection of scripts to enable, disable, set the default state and chec
 * `webcam-set-default.sh`
     Sets the default state of the webcam (enabled/disabled) by adding or removing the `uvcvideo` kernel module to the modprobe blacklist.
 
-## Dependencies
+## Build Dependencies
 
 ```
-sudo apt install make devscripts
+sudo apt install make devscripts pandoc
 ```
 
 ## Build DEB-Package

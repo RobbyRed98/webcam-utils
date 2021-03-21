@@ -10,7 +10,7 @@ for script in ${scripts_to_link[@]}; do
     if [ -f /usr/bin/$script ]; then 
         rm /usr/bin/$script
     fi
-    ln -s /usr/share/webcam-utils/$script.sh /usr/bin/$script -v
+    ln -s /usr/share/webcam-utils/$script.sh /usr/bin/$script
 done
 
 echo "Successfully created links."

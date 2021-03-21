@@ -4,7 +4,8 @@ Priority: optional
 Maintainer: RobbyRed98 <r.roth@mail.de>
 Build-Depends: debhelper-compat (= 12)
 Standards-Version: 4.5.0
-Vcs-Browser: https://github.com/RobbyRed98/webcam-utils.git
+Vcs-Git: https://github.com/RobbyRed98/webcam-utils.git
+Vcs-Browser: https://github.com/RobbyRed98/webcam-utils
 
 Package: webcam-utils
 Architecture: all
