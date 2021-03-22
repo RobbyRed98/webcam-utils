@@ -5,10 +5,10 @@
 # NAME
 webcam-status - shows the webcam status
 
-## SYNOPSIS
+# SYNOPSIS
 **webcam-status**
 
-## DESCRIPTION
+# DESCRIPTION
 Shows the webcam status (enabled/disabled) by looking up the loaded kernel modules. 
 
 # COPYRIGHT

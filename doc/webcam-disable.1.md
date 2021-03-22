@@ -5,11 +5,11 @@
 # NAME
 webcam-disable - disables the webcam temporarily
 
-## SYNOPSIS
+# SYNOPSIS
 **webcam-disable**
 
-## DESCRIPTION
-Disables the webcam temporarily by loading the kernel module uvcvideo.
+# DESCRIPTION
+Disables the webcam temporarily by unloading the kernel module uvcvideo.
 
 # COPYRIGHT
 Copyright (c) 2021 RobbyRed98 | MIT License

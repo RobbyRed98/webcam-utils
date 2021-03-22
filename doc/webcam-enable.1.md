@@ -5,10 +5,10 @@
 # NAME
 webcam-enable - enables the webcam temporarily
 
-## SYNOPSIS
+# SYNOPSIS
 **webcam-enable**
 
-## DESCRIPTION
+# DESCRIPTION
 Enables the webcam temporarily by removing the loaded kernel module uvcvideo.
 
 # COPYRIGHT
